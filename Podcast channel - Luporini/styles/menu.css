@@ -1,0 +1,235 @@
+.nav-mobile{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 19px 0 16px;
+    box-sizing: border-box;
+}
+
+.nav-mobile img{
+    height: 24px;
+    width: 24px;
+}
+
+.nav-mobile img:hover{
+    cursor:pointer;
+}
+
+nav input{
+    display: none;
+    width: 20px;
+    height: auto;
+}
+
+.menu{
+    transform: translate(-100%);
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    clear: both;
+    background-color:#0000EC;
+    z-index: 100;
+    padding: 16px 0 0 16px;
+    box-sizing: border-box;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    line-height: 28px;
+    margin-bottom: 24px;
+    font-family: 'IBM plex mono', monospace;
+}
+
+.menu a{
+    text-decoration: none;
+    height: 28px;
+    color: #FFFFFF;
+}
+
+.menu a:hover{
+    color: #00F3BB;
+    text-decoration: line-through;
+    transition-property: all;
+    transition-duration: 0.08s;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.menu a:active{
+    color: rgba(6,10,36,0.56);
+    outline: none;
+}
+
+.span-container{
+    position: relative;
+    width: 18px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    height: 100%;
+    width: 100%;
+    cursor:pointer;
+}
+
+.menu-span{
+    background-color: #060A24;
+    height: 2px;
+    width: 18px;
+}
+
+.menu-span:first-of-type{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.menu-span:nth-of-type(2){
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+.menu-span:nth-of-type(3){
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+.menu-span:last-of-type{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+#btn-menu:checked ~ .span-container span:nth-of-type(2){
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+#btn-menu:checked ~ .span-container span:nth-of-type(3){
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+
+}
+
+#btn-menu:checked ~ .span-container span:first-of-type,
+#btn-menu:checked ~ .span-container span:last-of-type{
+    display: none;
+}
+
+#btn-menu:checked ~ .menu,
+#btn-menu:checked ~ .menu #menu-list{
+
+    transform: translate(0%);
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: 100;
+}
+
+
+/*------------- Tablet section------------- */
+
+@media (min-width: 768px){
+
+    .nav-mobile{
+        height: 80px; 
+        padding: 0 50px;
+    }
+
+    .nav-mobile img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 25px 0 0 50px;
+    }
+
+    .menu li{
+        font-size: 18px;
+        line-height: 32px;
+    }    
+
+}
+
+/*------------- Notebook section------------- */
+
+@media (min-width: 1024px){
+
+
+    .nav-mobile{
+        padding: 0 75px;
+    }
+
+    .nav-mobile img{
+        height: 36px;
+        width: 36px;
+    }
+
+    .span-container{
+        display: none;
+    }
+
+    .menu{
+        position: relative;
+        top: 0;
+        transform: translate(0%);
+        background-color: white;
+        padding: 0;
+        width: 482px;
+        z-index: 0;
+        transition-property: all;
+        transition-duration: 0.8s;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+    }
+
+    .menu li{
+        margin-bottom: 0px;
+    }
+
+    .menu a{
+        color: #060A24;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .menu a:hover{
+        padding-left: 0;
+        font-size: larger;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+}
+
+@media (min-width: 1240px){
+
+    .nav-mobile{
+        padding: 0 100px;
+    }
+    
+}
+

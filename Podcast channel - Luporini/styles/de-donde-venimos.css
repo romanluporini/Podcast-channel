@@ -1,0 +1,123 @@
+.section-de-donde-venimos{
+    width: 100%;
+    clear: both;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: -65px;
+    margin-bottom: 54px;
+}
+
+.de-donde-venimos-img{
+    z-index: 1;
+    width: 100%;
+    clear: both;
+    display: flex;
+    justify-content: center;
+}
+
+.de-donde-venimos-img img{
+    width: 268px;
+    height: 434px;
+}
+
+.de-donde-venimos-container{
+    width: 100%;
+    max-width: 301px;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.de-donde-venimos-container h2{
+    text-align: left;
+    font-family: 'IBM Plex Sans',sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-bottom: 8px;
+}
+
+.de-donde-venimos-container p{
+    text-align: left;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+@media (min-width:768px){
+
+    .section-de-donde-venimos{
+        padding: 0 50px;
+        box-sizing: border-box;
+        align-items: center;
+        margin-top: -95px;
+    }
+    
+    .de-donde-venimos-img{
+        width: 50%;
+    }
+    
+    .de-donde-venimos-img img{
+        width: 324px;
+        height: 519px;
+    }
+    
+    .de-donde-venimos-container{
+        width: 50%;
+        justify-content: center;
+    }
+    
+    .de-donde-venimos-container h2{
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 54px;
+    }
+    
+    .de-donde-venimos-container p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}
+
+@media (min-width:1240px){
+
+    .section-de-donde-venimos{
+        padding: 0 100px;
+        box-sizing: border-box;
+        align-items: center;
+        margin-top: -165px;
+    }
+    
+    .de-donde-venimos-img{
+        width: 50%;
+        max-width: 620px;
+    }
+    
+    .de-donde-venimos-img img{
+        width: 404px;
+        height: 660px;
+    }
+    
+    .de-donde-venimos-container{
+        width: 50%;
+        max-width: 464px;
+        justify-content: center;
+    }
+    
+    .de-donde-venimos-container h2{
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 62px;
+    }
+    
+}

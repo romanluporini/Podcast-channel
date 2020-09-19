@@ -1,0 +1,119 @@
+.section-algunos-temas{
+    margin-top: 48px;
+    width: 100%;
+    clear: both;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.algunos-temas-container{
+    width: 100%;
+    clear: both;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 37px;
+}
+
+.algunos-temas-container h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+.algunos-temas-icons-container{
+    width: 100%;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.algunos-temas-icon-container{
+    width: 100%;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 42px;
+    
+}
+
+.algunos-temas-icon-text-container{
+    max-width: 288px;
+    justify-content: center;
+}
+
+.algunos-temas-icon-text-container h3{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.algunos-temas-icon-container img{
+    size: 104px;
+    margin-bottom: 13px;
+    justify-content: center;
+}
+
+@media (min-width:768px){
+
+    .algunos-temas-icon-container{
+        width: 40%;
+    }
+
+    .algunos-temas-icon-text-container{
+        max-width: 220px;
+    }
+
+    .algunos-temas-icons-container{
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .algunos-temas-container{
+        padding:0 84px;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+
+
+}
+
+@media (min-width:1240px){
+
+    .section-algunos-temas{
+        margin-top: 64px;
+    }
+
+    .algunos-temas-icon-container{
+        width: 260px;
+        margin-bottom: 0;
+    }
+
+    .algunos-temas-icons-container{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .algunos-temas-container{
+        padding:0 184px;
+        box-sizing: border-box;
+        margin-bottom: 69px;
+    }
+
+
+    .algunos-temas-container h2{
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+}
